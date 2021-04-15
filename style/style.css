@@ -1,0 +1,233 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Yanone Kaffeesatz';
+	color: white;
+	scroll-behavior: smooth;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	background: url('../img/фон.jpg') 0 0/cover no-repeat fixed;
+}
+
+
+.content{
+	flex: 1 1 auto;
+}
+
+
+.container{
+	max-width: 1230px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.menu{
+	min-width: 100%;
+	background-color: rgb(100, 160, 250);
+	margin: 0 auto;
+	box-shadow: 0 0 5px black;
+	position: fixed;
+	top: 0;
+}
+
+.menu-list{
+	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 24px;
+	padding: 14px 0;
+	color: white;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menu-list a{
+	color: white;
+}
+
+.menu-list a:hover{
+	color: rgb(219, 219, 219);
+}
+
+
+.home{
+	max-width: 50%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-size: 24px;
+}
+
+.cont{
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.39);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+}
+
+
+
+.avatar{
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.home-text{
+	max-width: 600px;
+	margin-top: 30px;
+	font-family: serif;
+}
+
+/* главная */
+
+.portfolio{
+	min-width: 100%;
+	background-color: rgb(243, 241, 241);
+	padding: 32px 0;
+}
+
+.title{
+	padding: 25px 0;
+	color: black;
+	font-size: 45px;
+	font-family: 'Yanone Kaffeesatz';
+	text-align: center;
+}
+
+.item-portfolio{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.item{
+	max-width: 250px;
+	overflow: hidden;
+	margin: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 24px;
+}
+
+
+.item-image{
+	border: 2px solid black;
+	margin-bottom: 18px;
+}
+
+.item img{
+	width: 100%;
+	object-fit: cover;
+}
+
+/* портфолио */
+
+
+.services{
+	background-color: rgb(255, 255, 255);
+	padding: 32px 0;
+}
+
+.services-info{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.services-item{
+	max-width: 50%;
+	overflow: hidden;
+}
+
+.services-item img{
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.services-text{
+	max-width: 400px;
+	color: black;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+/*услуги*/
+
+
+.ban{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	padding: 45px 0;
+}
+
+.ban-item{
+	max-width: 800px;
+	overflow: hidden;
+}
+
+.ban-item img{
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.ban-text{
+	text-align: center;
+	font-size: 26px;
+}
+
+/*запрет*/
+
+@media(max-width:1200px){
+	
+}
